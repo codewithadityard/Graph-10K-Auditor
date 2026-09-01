@@ -31,9 +31,8 @@ What was the exact amount of total net revenue and total assets reported by JPMo
 [REASONING] The user requests specific financial figures... categorizing as financial math.
 [DECISION] -> Route to: sql_db
 
-=======================================================
-✅ VERIFIED OUTPUT
-=======================================================
+✅ VERIFIED OUTPUT :
+
 Based on the raw database results, the exact amount of total net revenue and total assets reported by JPMorgan Chase at the end of 2025 is:
 * Total net revenue: $182,447,000,000
 * Total assets: $4,424,900,000,000
@@ -58,17 +57,14 @@ Based on the jpmorgan_sec_10k_report.pdf, what specific physical and transition 
 [CORRECTION]: Self-correction loop triggered due to hallucination.
 [AUDIT]: Status = Approved (Every sentence perfectly aligned with context).
 
-=======================================================
-✅ VERIFIED OUTPUT
-=======================================================
+
+✅ VERIFIED OUTPUT:
+
 JPMorgan Chase identifies specific physical and transition climate change risks. Physical risks include the increased frequency or severity of acute weather events and shifting climate patterns. Transition risks include evolving regulatory requirements...
 
 📊 Metrics: 1 Graph Loop | Final Audit: Approved | Context Relevant: Yes
 
 ### Route 3: web Search 
-=======================================================
-🤖 INITIATING AUTONOMOUS LEGAL CONTRACT AUDITOR 🤖
-=======================================================
 
 > Enter your legal question: 
 What is the live trading price of JPM stock today, and what is the latest market news regarding their new Apple Card portfolio?
@@ -84,12 +80,12 @@ The user requests the current trading price of JPM stock and the latest market n
 [EXECUTING WEB SEARCH] 
 -> Directing web synthesis to Local Ollama Instance (Zero Rate Limits)...
 
-=======================================================
+
 ✅ VERIFIED OUTPUT
-=======================================================
+
 The current live trading price of JPM stock today is $361.09, and the latest market news regarding their new Apple Card portfolio is not mentioned in the search results. However, the search results do mention that analysts remain cautiously optimistic about JPM's future growth amidst rising expenses and market risks, and that technical and fundamental signals align bullish.
 
--------------------------------------------------------
+
 📊 Metrics: 0 Graph Loops | Final Audit: Approved | Context Relevant: yes
 
 🛠️ Installation & Setup
