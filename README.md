@@ -48,11 +48,12 @@ Based on the jpmorgan_sec_10k_report.pdf, what specific physical and transition 
 ⏳ Processing... (Routing through LangGraph State Machine)
 [DECISION]: -> Route to: legal_rag
 
---- [NODE] EXECUTING STRUCTURAL RAG ENGINE ---
+ [NODE] EXECUTING STRUCTURAL RAG ENGINE 
 [SEARCH & RERANK]: Vector matched 10 blocks -> Cross-Encoder kept 1 highly relevant chunk.
 [RELEVANCE]: True (Context explicitly mentions physical/transition risks).
 
---- [NODE] EXECUTING GENERATOR & CRITIC ---
+[NODE] EXECUTING GENERATOR & CRITIC :
+
 [AUDIT]: Status = Refuted (Discrepancies found, looping back)
 [CORRECTION]: Self-correction loop triggered due to hallucination.
 [AUDIT]: Status = Approved (Every sentence perfectly aligned with context).
@@ -115,7 +116,7 @@ python main.py
 
 ⚙️ Tech Stack:
 
-1. Orchestration: LangGraph, LangChain
+1.Orchestration: LangGraph, LangChain
 
 2.Models: Gemini 2.5 Flash, Llama 3.1 (via Groq)
 
